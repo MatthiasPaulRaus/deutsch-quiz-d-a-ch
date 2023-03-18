@@ -7,8 +7,7 @@ author="Matthias Paul Raus, 2021">
 * {box-sizing: border-box}
 body
 {
-  font-family: "arial", sans-serif;
-  font-size: 100%;
+  font-family: "arial", sans-serif; font-size: 100%;
   background-color: rgb(200, 232, 243);
 }
 .title
@@ -21,15 +20,15 @@ body
   border: 2px solid rgb(61, 123, 158);
   border-radius: 5px;
   padding: 10px;
-margin-left:auto;
-margin-right:auto;
+  margin-left:auto;
+  margin-right:auto;
   margin-bottom: 10px;
-}
+  }
   
 .Frage
 { 
   text-align: center;
-  
+  font-size: 18px;
   background-color: rgb(247, 243, 243);
   border-radius: 5px;
   padding: 10px;
@@ -38,31 +37,26 @@ margin-right:auto;
 /* Style the tab */
 .tab
 {
-  float:left;
+  display:block;
+  
   border: none;
   margin: 10px;
-  height: 180px;
- 
-
+  
 }
 
 /* Style the buttons inside the tab */
 .tab button 
 {
-  display: inline-block;
+  
   background-color: inherit;
   border-radius: 5px;
   color: black;
-  padding: 15px ;
   border: none;
   outline: none;
-  text-align: center;
+  padding:10px;
   cursor: pointer;
-  font-size: 1.25rem;
+  font-size: 18px;
 }
-
-
-
 
 /* Change background color of buttons on hover */
 .tab button:hover 
@@ -86,7 +80,6 @@ margin-right:auto;
   height: 100px;
   padding: 20px;
   margin:10px;
-
   display: none;
 }
 .right{
@@ -99,7 +92,6 @@ margin-right:auto;
 }
 .wrong{
   float:right;
-  width:100px;
   padding: 10px;
   color:white;
   background-color: tomato;
@@ -123,58 +115,58 @@ margin-right:auto;
 <div><h2 class="title">D-A-CH-Quiz</h2></div>
 
 
-<h2 class="title">Hier ist ein kleines Quiz mit Fragen über Deutschland, Österreich und die Schweiz.</h2>
- <h2 class="title">Manchmal gibt es mehr als eine richtige Lösung. Viel Spaß!</h2>
+  <h2 class="title">Hier ist ein kleines Quiz mit Fragen über Deutschland, Österreich und die Schweiz.</h2>
+  <h2 class="title">Manchmal gibt es mehr als eine richtige Lösung. Viel Spaß!</h2>
   
-   <br> 
- <br> 
- <br> 
- <br> 
- <br> 
+  <br> 
+  <br> 
+  <br> 
+  <br> 
+  <br> 
 
   <div><a href="https://img.freepik.com/foto-gratis/flechas-callejero-nota-aprender-senal-direccion_121-64057.jpg?size=626&amp;ext=jpg"
         style="display: block; padding: 1em 0px; text-align: center;">
   <img alt="" border="0" data-original-height="470" data-original-width="626"
    src="https://img.freepik.com/foto-gratis/flechas-callejero-nota-aprender-senal-direccion_121-64057.jpg?size=626&amp;ext=jpg" width="320" />
   </a></div>
- 
- <br> 
- <br> 
- <br> 
- <br> 
- <br> 
-
-<div class="card">
-<p class="Frage" >1. Wie heißt die Hauptstadt von Österreich?</p>
-
-<div class="tab">
   
+  
+  
+  
+ <br> 
+ <br> 
+ <br> 
+ <br> 
+ <br> 
+
+  <div class="card">
+  <div class="Frage" >1. Wie heißt die Hauptstadt von Österreich?</div>
+
+  <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Salzburg')">Salzburg</button>
   <button class="tablinks" onclick="openCity(event, 'Wien')">Wien</button>
   <button class="tablinks" onclick="openCity(event, 'Graz')">Graz</button>
-  
   <br>
-</div>
+  </div>
 
-<div id="Salzburg" class="tabcontent">
-  <p class="wrong">falsch</p> 
-</div>
+  <div id="Salzburg" class="tabcontent">
+  <div class="wrong">falsch</div> 
+  </div>
 
-<div id="Wien" class="tabcontent">
-  <p class="right">richtig</p>
-</div> 
+  <div id="Wien" class="tabcontent">
+  <div class="right">richtig</div>
+  </div> 
 
-<div id="Graz" class="tabcontent">
-  <p class="wrong">falsch</p> 
-</div>
+  <div id="Graz" class="tabcontent">
+  <div class="wrong">falsch</div> 
+  </div>
 
-<div class="clearfix"></div>
-  
-</div>
+  <div class="clearfix"></div>
+  </div>
 
 
-<div class="card">
-  <p class="Frage" >2. Welche Speise kommt aus Österreich?</p>
+  <div class="card">
+  <div class="Frage" >2. Welche Speise kommt aus Österreich?</div>
   
   <div class="tab">
     <button  class="tablinks" onclick="openCity(event, 'Sacher Torte')">Sacher Torte</button>
@@ -184,22 +176,22 @@ margin-right:auto;
   </div>
   
   <div id="Sacher Torte" class="tabcontent">
-    <p class="right">richtig</p> 
+    <div class="right">richtig</div> 
   </div>
   
   <div id="Berner Rösti" class="tabcontent">
-    <p class="wrong">falsch</p>
+    <div class="wrong">falsch</div>
   </div> 
   
   <div id="Spätzle" class="tabcontent">
-    <p class="wrong">falsch</p> 
+    <div class="wrong">falsch</div> 
   </div>
   <div class="clearfix"></div>
 </div>
   
 
 <div class="card">
-  <p class="Frage" >3. Wie heißt die größte Stadt der Schweiz?</p>
+  <div class="Frage" >3. Wie heißt die größte Stadt der Schweiz?</div>
   
   <div class="tab">
     <button  class="tablinks" onclick="openCity(event, 'Basel')">Basel</button>
@@ -209,21 +201,21 @@ margin-right:auto;
   </div>
   
   <div id="Basel" class="tabcontent">
-    <p class="wrong">falsch</p> 
+    <div class="wrong">falsch</div> 
   </div>
   
   <div id="Bern" class="tabcontent">
-    <p class="wrong">falsch</p>
+    <div class="wrong">falsch</div>
   </div> 
   
   <div id="Zürich" class="tabcontent">
-    <p class="right">richtig</p> 
+    <div class="right">richtig</div> 
   </div>
   <div class="clearfix"></div>
 </div>
 
 <div class="card">
-  <p class="Frage" >4. Ein beliebtes Gericht aus der Schweiz heißt ...?</p>
+  <div class="Frage" >4. Ein beliebtes Gericht aus der Schweiz heißt ...?</div>
   
   <div class="tab">
     <button  class="tablinks" onclick="openCity(event, 'Käsefondue')">Käsefondue</button>
@@ -233,21 +225,21 @@ margin-right:auto;
   </div>
   
   <div id="Käsefondue" class="tabcontent">
-    <p class="right">richtig</p> 
+    <div class="right">richtig</div> 
   </div>
   
   <div id="Rösti" class="tabcontent">
-    <p class="right">richtig</p>
+    <div class="right">richtig</div>
   </div> 
   
   <div id="Gulasch" class="tabcontent">
-    <p class="wrong">falsch</p> 
+    <div class="wrong">falsch</div> 
   </div>
   <div class="clearfix"></div>
 </div>
 
 <div class="card">
-  <p class="Frage" >5. Welche Stadt liegt am Rhein?</p>
+  <div class="Frage" >5. Welche Stadt liegt am Rhein?</div>
   
   <div class="tab">
     <button  class="tablinks" onclick="openCity(event, 'Frankfurt')">Frankfurt</button>
@@ -257,21 +249,21 @@ margin-right:auto;
   </div>
   
   <div id="Frankfurt" class="tabcontent">
-    <p class="wrong">falsch</p> 
+    <div class="wrong">falsch</div> 
   </div>
   
   <div id="Köln" class="tabcontent">
-    <p class="right">richtig</p>
+    <div class="right">richtig</div>
   </div> 
   
   <div id="Hamburg" class="tabcontent">
-    <p class="wrong">falsch</p> 
+    <div class="wrong">falsch</div> 
   </div>
   <div class="clearfix"></div>
 </div>
 
 <div class="card">
-  <p class="Frage" >6. In welchen Ländern liegt der Bodensee?</p>
+  <div class="Frage" >6. In welchen Ländern liegt der Bodensee?</div>
   
   <div class="tab">
     <button  class="tablinks" onclick="openCity(event, 'Deutschland')">Deutschland</button>
@@ -281,21 +273,21 @@ margin-right:auto;
   </div>
   
   <div id="Deutschland" class="tabcontent">
-    <p class="right">richtig</p> 
+    <div class="right">richtig</div> 
   </div>
   
   <div id="Österreich" class="tabcontent">
-    <p class="right" >richtig</p>
+    <div class="right" >richtig</div>
   </div> 
   
   <div id="Schweiz" class="tabcontent">
-    <p class="right">richtig</p> 
+    <div class="right">richtig</div> 
   </div>
   <div class="clearfix"></div>
 </div>
 
 <div class="card">
-  <p class="Frage" >7. Wie heißt das größte Fest in Deutschland?</p>
+  <div class="Frage" >7. Wie heißt das größte Fest in Deutschland?</div>
   
   <div class="tab">
     <button  class="tablinks" onclick="openCity(event, 'Kieler Woche')">Kieler Woche</button>
@@ -305,21 +297,21 @@ margin-right:auto;
   </div>
   
   <div id="Kieler Woche" class="tabcontent">
-    <p class="wrong">falsch</p> 
+    <div class="wrong">falsch</div> 
   </div>
   
   <div id="Rheinkirmes" class="tabcontent">
-    <p class="wrong">falsch</p>
+    <div class="wrong">falsch</div>
   </div> 
   
   <div id="Oktoberfest" class="tabcontent">
-    <p class="right">richtig</p> 
+    <div class="right">richtig</div> 
   </div>
   <div class="clearfix"></div>
 </div>
 
 <div class="card">
-  <p class="Frage" >8. In welchem Bundesland liegt Frankfurt?</p>
+  <div class="Frage" >8. In welchem Bundesland liegt Frankfurt?</div>
   
   <div class="tab">
     <button  class="tablinks" onclick="openCity(event, 'Sachsen')">Sachsen</button>
@@ -329,21 +321,21 @@ margin-right:auto;
   </div>
   
   <div id="Sachsen" class="tabcontent">
-    <p class="wrong">falsch</p> 
+    <div class="wrong">falsch</div> 
   </div>
   
   <div id="Hessen" class="tabcontent">
-    <p class="right">richtig</p>
+    <div class="right">richtig</div>
   </div> 
   
   <div id="Saarland" class="tabcontent">
-    <p class="wrong">falsch</p> 
+    <div class="wrong">falsch</div> 
   </div>
   <div class="clearfix"></div>
 </div>
 
 <div class="card">
-  <p class="Frage" >9. Wie heißt der längste Fluss in Deutschland?</p>
+  <div class="Frage" >9. Wie heißt der längste Fluss in Deutschland?</div>
   
   <div class="tab">
     <button class="tablinks" onclick="openCity(event, 'Elbe')">Elbe</button>
@@ -353,21 +345,21 @@ margin-right:auto;
   </div>
   
   <div id="Elbe" class="tabcontent">
-    <p class="wrong">falsch</p> 
+    <div class="wrong">falsch</div> 
   </div>
   
   <div id="Donau" class="tabcontent">
-    <p class="wrong">falsch</p>
+    <div class="wrong">falsch</div>
   </div> 
   
   <div id="Rhein" class="tabcontent">
-    <p class="right">richtig</p> 
+    <div class="right">richtig</div> 
   </div>
   <div class="clearfix"></div>
 </div>
 
 <div class="card">
-  <p class="Frage" >10. Wo leben die meisten Menschen in der BRD?</p>
+  <div class="Frage" >10. Wo leben die meisten Menschen in der BRD?</div>
   
   <div class="tab">
     <button class="tablinks" onclick="openCity(event, 'im Norden')">im Norden</button>
@@ -377,15 +369,15 @@ margin-right:auto;
   </div>
   
   <div id="im Norden" class="tabcontent">
-    <p class="wrong">falsch</p> 
+    <div class="wrong">falsch</div> 
   </div>
   
   <div id="im Westen" class="tabcontent">
-    <p class="right">richtig</p>
+    <div class="right">richtig</div>
   </div> 
   
   <div id="im Osten" class="tabcontent">
-    <p class="wrong">falsch</p> 
+    <div class="wrong">falsch</div> 
   </div>
   <div class="clearfix"></div>
 </div>
