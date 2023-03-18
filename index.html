@@ -16,6 +16,7 @@ body
 }
 .card
 {
+  
   max-width: 500px;
   border: 2px solid rgb(61, 123, 158);
   border-radius: 5px;
@@ -25,7 +26,7 @@ body
   margin-bottom: 10px;
   }
   
-.Frage
+.qus
 { 
   text-align: center;
   font-size: 18px;
@@ -37,8 +38,7 @@ body
 /* Style the tab */
 .tab
 {
-  display:block;
-  
+ 
   border: none;
   margin: 10px;
   
@@ -47,7 +47,6 @@ body
 /* Style the buttons inside the tab */
 .tab button 
 {
-  
   background-color: inherit;
   border-radius: 5px;
   color: black;
@@ -55,7 +54,7 @@ body
   outline: none;
   padding:10px;
   cursor: pointer;
-  font-size: 18px;
+  font-size:1.125em;
 }
 
 /* Change background color of buttons on hover */
@@ -74,29 +73,31 @@ body
 /* Style the tab content */
 .tabcontent 
 {
-  text-align: center;
+  text-align:center;
   border-radius: 5px;
   border: none;
   height: 100px;
   padding: 20px;
   margin:10px;
   display: none;
+  font-size:1.125em;
 }
 .right{
-  float:right;
+  width:100px;
+  margin:auto;
   padding: 10px;
   color:white;
   background-color: green;
   border-radius: 5px;
-  font-size: 18px;
 }
 .wrong{
-  float:right;
+  width:100px;
+  margin:auto;
+  
   padding: 10px;
   color:white;
   background-color: tomato;
   border-radius: 5px;
-  font-size: 18px;
 }
 
 /* Clear floats after the tab */
@@ -114,7 +115,6 @@ body
  
 <div><h2 class="title">D-A-CH-Quiz</h2></div>
 
-
   <h2 class="title">Hier ist ein kleines Quiz mit Fragen über Deutschland, Österreich und die Schweiz.</h2>
   <h2 class="title">Manchmal gibt es mehr als eine richtige Lösung. Viel Spaß!</h2>
   
@@ -129,10 +129,7 @@ body
   <img alt="" border="0" data-original-height="470" data-original-width="626"
    src="https://img.freepik.com/foto-gratis/flechas-callejero-nota-aprender-senal-direccion_121-64057.jpg?size=626&amp;ext=jpg" width="320" />
   </a></div>
-  
-  
-  
-  
+
  <br> 
  <br> 
  <br> 
@@ -140,13 +137,12 @@ body
  <br> 
 
   <div class="card">
-  <div class="Frage" >1. Wie heißt die Hauptstadt von Österreich?</div>
+  <div class="qus" >1. Wie heißt die Hauptstadt von Österreich?</div>
 
   <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Salzburg')">Salzburg</button>
   <button class="tablinks" onclick="openCity(event, 'Wien')">Wien</button>
   <button class="tablinks" onclick="openCity(event, 'Graz')">Graz</button>
-  <br>
   </div>
 
   <div id="Salzburg" class="tabcontent">
@@ -162,17 +158,16 @@ body
   </div>
 
   <div class="clearfix"></div>
-  </div>
+</div>
 
 
   <div class="card">
-  <div class="Frage" >2. Welche Speise kommt aus Österreich?</div>
+  <div class="qus" >2. Welche Speise kommt aus Österreich?</div>
   
   <div class="tab">
     <button  class="tablinks" onclick="openCity(event, 'Sacher Torte')">Sacher Torte</button>
     <button class="tablinks" onclick="openCity(event, 'Berner Rösti')">Berner Rösti</button>
     <button class="tablinks" onclick="openCity(event, 'Spätzle')">Spätzle</button>
-    <br>
   </div>
   
   <div id="Sacher Torte" class="tabcontent">
@@ -191,13 +186,12 @@ body
   
 
 <div class="card">
-  <div class="Frage" >3. Wie heißt die größte Stadt der Schweiz?</div>
+  <div class="qus" >3. Wie heißt die größte Stadt der Schweiz?</div>
   
   <div class="tab">
     <button  class="tablinks" onclick="openCity(event, 'Basel')">Basel</button>
     <button class="tablinks" onclick="openCity(event, 'Bern')">Bern</button>
-    <button class="tablinks" onclick="openCity(event, 'Zürich')">Zürich</button>
-    <br>
+    <button class="tablinks" onclick="openCity(event, 'Zürich')">Zürich</button> 
   </div>
   
   <div id="Basel" class="tabcontent">
@@ -215,13 +209,12 @@ body
 </div>
 
 <div class="card">
-  <div class="Frage" >4. Ein beliebtes Gericht aus der Schweiz heißt ...?</div>
+  <div class="qus" >4. Ein beliebtes Gericht aus der Schweiz heißt ...?</div>
   
   <div class="tab">
     <button  class="tablinks" onclick="openCity(event, 'Käsefondue')">Käsefondue</button>
     <button class="tablinks" onclick="openCity(event, 'Rösti')">Rösti</button>
-    <button class="tablinks" onclick="openCity(event, 'Gulasch')">Gulasch</button>
-    <br>
+    <button class="tablinks" onclick="openCity(event, 'Gulasch')">Gulasch</button> 
   </div>
   
   <div id="Käsefondue" class="tabcontent">
@@ -239,13 +232,12 @@ body
 </div>
 
 <div class="card">
-  <div class="Frage" >5. Welche Stadt liegt am Rhein?</div>
+  <div class="qus" >5. Welche Stadt liegt am Rhein?</div>
   
   <div class="tab">
     <button  class="tablinks" onclick="openCity(event, 'Frankfurt')">Frankfurt</button>
     <button class="tablinks" onclick="openCity(event, 'Köln')">Köln</button>
-    <button class="tablinks" onclick="openCity(event, 'Hamburg')">Hamburg</button>
-    <br>
+    <button class="tablinks" onclick="openCity(event, 'Hamburg')">Hamburg</button> 
   </div>
   
   <div id="Frankfurt" class="tabcontent">
@@ -263,13 +255,12 @@ body
 </div>
 
 <div class="card">
-  <div class="Frage" >6. In welchen Ländern liegt der Bodensee?</div>
+  <div class="qus" >6. In welchen Ländern liegt der Bodensee?</div>
   
   <div class="tab">
     <button  class="tablinks" onclick="openCity(event, 'Deutschland')">Deutschland</button>
     <button class="tablinks" onclick="openCity(event, 'Österreich')">Österreich</button>
-    <button class="tablinks" onclick="openCity(event, 'Schweiz')">Schweiz</button>
-    <br>
+    <button class="tablinks" onclick="openCity(event, 'Schweiz')">Schweiz</button> 
   </div>
   
   <div id="Deutschland" class="tabcontent">
@@ -287,13 +278,12 @@ body
 </div>
 
 <div class="card">
-  <div class="Frage" >7. Wie heißt das größte Fest in Deutschland?</div>
+  <div class="qus" >7. Wie heißt das größte Fest in Deutschland?</div>
   
   <div class="tab">
     <button  class="tablinks" onclick="openCity(event, 'Kieler Woche')">Kieler Woche</button>
     <button class="tablinks" onclick="openCity(event, 'Rheinkirmes')">Rheinkirmes</button>
-    <button class="tablinks" onclick="openCity(event, 'Oktoberfest')">Oktoberfest</button>
-    <br>
+    <button class="tablinks" onclick="openCity(event, 'Oktoberfest')">Oktoberfest</button> 
   </div>
   
   <div id="Kieler Woche" class="tabcontent">
@@ -311,13 +301,12 @@ body
 </div>
 
 <div class="card">
-  <div class="Frage" >8. In welchem Bundesland liegt Frankfurt?</div>
+  <div class="qus" >8. In welchem Bundesland liegt Frankfurt?</div>
   
   <div class="tab">
     <button  class="tablinks" onclick="openCity(event, 'Sachsen')">Sachsen</button>
     <button class="tablinks" onclick="openCity(event, 'Hessen')">Hessen</button>
-    <button class="tablinks" onclick="openCity(event, 'Saarland')">Saarland</button>
-    <br>
+    <button class="tablinks" onclick="openCity(event, 'Saarland')">Saarland</button> 
   </div>
   
   <div id="Sachsen" class="tabcontent">
@@ -335,13 +324,12 @@ body
 </div>
 
 <div class="card">
-  <div class="Frage" >9. Wie heißt der längste Fluss in Deutschland?</div>
+  <div class="qus" >9. Wie heißt der längste Fluss in Deutschland?</div>
   
   <div class="tab">
     <button class="tablinks" onclick="openCity(event, 'Elbe')">Elbe</button>
     <button class="tablinks" onclick="openCity(event, 'Donau')">Donau</button>
-    <button class="tablinks" onclick="openCity(event, 'Rhein')">Rhein</button>
-    <br>
+    <button class="tablinks" onclick="openCity(event, 'Rhein')">Rhein</button> 
   </div>
   
   <div id="Elbe" class="tabcontent">
@@ -359,13 +347,12 @@ body
 </div>
 
 <div class="card">
-  <div class="Frage" >10. Wo leben die meisten Menschen in der BRD?</div>
+  <div class="qus" >10. Wo leben die meisten Menschen in der BRD?</div>
   
   <div class="tab">
     <button class="tablinks" onclick="openCity(event, 'im Norden')">im Norden</button>
     <button class="tablinks" onclick="openCity(event, 'im Westen')">im Westen</button>
-    <button class="tablinks" onclick="openCity(event, 'im Osten')">im Osten</button>
-    <br>
+    <button class="tablinks" onclick="openCity(event, 'im Osten')">im Osten</button> 
   </div>
   
   <div id="im Norden" class="tabcontent">
