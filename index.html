@@ -38,10 +38,8 @@ body
 /* Style the tab */
 .tab
 {
- 
   border: none;
   margin: 10px;
-  
 }
 
 /* Style the buttons inside the tab */
@@ -82,6 +80,12 @@ body
   display: none;
   font-size:1.45em;
 }
+  
+ @keyframes richtig{
+  0%{background-color: limegreen;}
+  25%{background-color: green;}
+}
+  
 .right{
   width:100px;
   margin:auto;
@@ -89,15 +93,24 @@ body
   color:white;
   background-color: green;
   border-radius: 5px;
+  animation-name:richtig;
+  animation-duration:1s;
 }
+  
+  @keyframes falsch{
+  0%{background-color:rgb(255, 128, 0);}
+  25%{background-color:tomato;}
+}
+  
 .wrong{
   width:100px;
   margin:auto;
-  
   padding: 10px;
   color:white;
   background-color: tomato;
   border-radius: 5px;
+  animation-name:falsch;
+  animation-duration:1s; 
 }
 
 /* Clear floats after the tab */
